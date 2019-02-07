@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="Editor">
     <!-- <AppToolbar/> -->
     <vue-editor v-model="content"></vue-editor>
     <button class="btn" type="button" v-on:click="postNote()">
@@ -86,36 +86,36 @@
    import { VueEditor } from 'vue2-editor'
  
    export default {
- 
-   components: {
-      VueEditor,
-      AppToolbar
-   },
- 
-   data() {
-       return {
-        content: '<h1>Ingresa tu nota </h1>' ,
-        postData:{}
-       }
-    }, 
-    methods: {
-
-      postNote(){
-        let note = String(this.content);
-        this.postData= {
-          id:"id generico",
-          article:note,
-          author:"Autor generico",
-          location: "Locacion generica",
-          date: "crear metodo para el date",
-          type: "tipo generico",
-          status: "status generico",
-          editor_id: "id generico"
+    layout: 'dashboard',
+    components: {
+        VueEditor,
+        AppToolbar
+    },
+  
+    data() {
+        return {
+          content: '<h1>Ingresa tu nota </h1>' ,
+          postData:{}
         }
-        console.log(this.postData);
-      } 
+      }, 
+      methods: {
+
+        postNote(){
+          let note = String(this.content);
+          this.postData= {
+            id:"id generico",
+            article:note,
+            author:"Autor generico",
+            location: "Locacion generica",
+            date: "crear metodo para el date",
+            type: "tipo generico",
+            status: "status generico",
+            editor_id: "id generico"
+          }
+          console.log(this.postData);
+        } 
+      }
     }
-   }
 
    
  </script> 

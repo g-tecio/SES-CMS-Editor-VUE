@@ -12,10 +12,8 @@ const Menu = [
     group: 'apps',
     icon:  'edit',
     href: '/editorText'
-  }
-  ,
-  /*
-  {
+  },
+  /* {
     title: 'Chat',
     group: 'apps',
     icon: 'chat_bubble',
@@ -133,8 +131,8 @@ const Menu = [
     group: 'extra',
     icon: 'insert_drive_file',
     href: '/empty'
-  },
-  */
+  }, */
+  
 ];
 // reorder menu
 Menu.forEach((item) => {

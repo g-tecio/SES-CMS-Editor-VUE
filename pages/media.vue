@@ -1,5 +1,5 @@
 <template>
-  <div id="media" class="media">
+  <div id="" class="media">
     <v-toolbar class="elevation-0 transparent media-toolbar">
       <v-btn-toggle>
         <v-btn flat>
